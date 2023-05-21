@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Saba Mugs</title>
+    <link rel="icon" type="image/png" href="./assets/img/icon.jpg" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./vendor/css/all.min.css">
+    <!-- bootstrab css -->
+    <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
+    <!-- my local css -->
+    <link rel="stylesheet" href="./assets/css/Style.css" />
+</head>
+
+<body>
+        <!-- loading -->
+        <div class="loading">
+            <span class="loader"></span>
+        </div>
+        <div class="container">
+        <!-- scroll -->
+        <div class="scroll">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+        <section class="api" id="api">
+            <p class="ap">Forecast <br> For Today</p>
+            <div id="infoApi">
+            </div>
+        </section>
+        <nav class="navbar  navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">SABA MUGS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="mug.html" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        مجات
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="coursesMug.html">تخصصات</a></li>
+                                <li><a class="dropdown-item" href="ramadanMug.html">رمضان</a></li>
+                                <li><a class="dropdown-item" href="mug.html">منوعات</a></li>
+                                <li><a class="dropdown-item" href="cuplesMug.html">كبلز</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="books.html">فواصل للكتب</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="glasses.html">كاسات شفافة</a>
+                        </li>
+                        <div class="navbar-icon m-2">
+                            <a href="login.html"><i class="fa-solid fa-user user mx-3"></i></a>
+                            <a href="buy.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                        </div>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="hello">
+                <img src="./assets/img/logo.jpg" alt="Saba mugs and more logo" />
+                <br>
+                <h1>أهلاً وسهلاً بِكُم في مَتجر صَبَا الإلكتروني </h1>
+                <p>صُنِعَ بِكلّ حُب</p>
+            </div>
+        </header>
+        <section class="img_info">
+            <h2>أصناف المنتجات</h2>
+            <div class="category mt-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/mug/WhatsApp Image 2023-04-18 at 01.38.41.jpg" class="d-block w-100"
+                                alt="mug photo">
+                            <div class="card-body">
+                                <h5 class="card-title">مجات || Mugs </h5>
+                                <a href="mug.html" class="btn btn-outline-dark">شاهد المزيد ! </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/book/WhatsApp Image 2023-04-18 at 01.39.32.jpg" class="d-block w-100"
+                                alt="for books photo">
+                            <div class="card-body">
+                                <h5 class="card-title">فواصل للكتب</h5>
+                                <a href="#" class="btn btn-outline-dark">شاهد المزيد !</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/glasses/WhatsApp Image 2023-04-18 at 01.38.11.jpg"
+                                class="d-block w-100" alt="glasses photo">
+                            <div class="card-body">
+                                <h5 class="card-title">كاسات شفافة</h5>
+                                <a href="#" class="btn btn-outline-dark">شاهد المزيد !</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="imgs">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/all/WhatsApp Image 2023-04-18 at 01.35.00.jpg" class="d-block w-100"
+                                alt="group of mugs ">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/all/WhatsApp Image 2023-04-18 at 01.35.02.jpg" class="d-block w-100"
+                                alt="group of mugs">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/all/WhatsApp Image 2023-04-18 at 01.40.38.jpg" class="d-block w-100"
+                                alt="group of mugs">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/all/WhatsApp Image 2023-04-18 at 01.40.39.jpg" class="d-block w-100"
+                                alt="group of mug">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/all/WhatsApp Image 2023-04-18 at 01.40.42.jpg" class="d-block w-100"
+                                alt="group of mug">
+                        </div>
+                    </div>
+
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="story">
+            <h2>قصتي</h2>
+            <p class="fs-4 fw-3 w-50 m-auto">عندما اجتمعت هواية الرسم مع حب وشغف تجميع الأكواب , ظهرت فكرة الرسم على المجات ,الفناجين , تعليقات الكتب برسومات مميزة  جدا و فريدة</p>
+        </section>
+        <section class="feedback my-5 py-3 ">
+            <div class="container text-center">
+                <h2 class="text-center mt-5">آراء الزبائن</h2>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner mb-2">
+                        <div class="carousel-item active">
+                            <div class="row py-5   w-100 m-auto ">
+                                <div class="col-md-6  mb-2 fed  text-center position-relative d-flex justify-content-around">
+                                    <div class="product py-5  ">
+                                        <img class="mt-5" src="./assets/img/user/images (1).png"
+                                            alt="user razan picture ">
+                                        <h4 class=" py-5 fw-bold">رزان</h4>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./assets/img/majors/WhatsApp Image 2023-04-18 at 01.37.04.jpg"
+                                            class="card-img-top" alt="feedback">
+                                        <div class="card-body">
+                                            <p class="card-text">المنتج رائع والألوان مناسبة <i
+                                                    class="fa-solid fa-quote-left"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6  fed  text-center position-relative d-flex justify-content-around">
+                                    <div class="product  py-5   ">
+                                        <img class="mt-5" src="./assets/img/user/images (3).png"
+                                            alt="user saba picture ">
+                                        <h4 class="py-5 fw-bold">صبا</h4>
+                                    </div>
+                                    <div class="card " style="width: 18rem;">
+                                        <img src="./assets/img/mug/WhatsApp Image 2023-04-18 at 01.34.36.jpg"
+                                            class="card-img-top" alt="feedback">
+                                        <div class="card-body">
+                                            <p class="card-text">الرسمة كما أريد بالضبط و ألوانها رائعة <i
+                                                    class="fa-solid fa-quote-left"></i></p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="row py-5 w-100 m-auto">
+                                <div class="col-md-6  mb-2 fed  text-center position-relative d-flex justify-content-around">
+                                    <div class="product py-5  ">
+                                        <img class="mt-5" src="./assets/img/user/female-avatar-profile-icon-round-woman-face-vector-18307282.jpg"
+                                            alt="user razan picture ">
+                                        <h4 class=" py-5 fw-bold">لونا</h4>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./assets/img/majors/WhatsApp Image 2023-04-18 at 01.38.14.jpg"
+                                            class="card-img-top" alt="feedback">
+                                        <div class="card-body">
+                                            <p class="card-text">المنتج رائع والألوان مناسبة <i
+                                                    class="fa-solid fa-quote-left"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6  fed  text-center position-relative d-flex justify-content-around">
+                                    <div class="product  py-5   ">
+                                        <img class="mt-5" src="./assets/img/user/images (2).png"
+                                            alt="user saba picture ">
+                                        <h4 class="py-5 fw-bold">صبا</h4>
+                                    </div>
+                                    <div class="card " style="width: 18rem;">
+                                        <img src="./assets/img/mug/WhatsApp Image 2023-04-18 at 01.34.09.jpg"
+                                            class="card-img-top" alt="feedback">
+                                        <div class="card-body">
+                                            <p class="card-text">الرسمة كما أريد بالضبط و ألوانها رائعة <i
+                                                    class="fa-solid fa-quote-left"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="row py-5  w-100 m-auto">
+                                <div class="col-md-6 mb-2  fed  text-center position-relative d-flex justify-content-around">
+                                    <div class="product py-5  ">
+                                        <img class="mt-5" src="./assets/img/user/female-avatar-profile-icon-round-woman-face-vector-18307290.jpg"
+                                            alt="user razan picture ">
+                                        <h4 class=" py-5 fw-bold">سيلا</h4>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./assets/img/majors/WhatsApp Image 2023-04-18 at 01.37.51.jpg"
+                                            class="card-img-top" alt="feedback">
+                                        <div class="card-body">
+                                            <p class="card-text">المنتج رائع والألوان مناسبة <i
+                                                    class="fa-solid fa-quote-left"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6  fed  text-center position-relative d-flex justify-content-around">
+                                    <div class="product  py-5   ">
+                                        <img class="mt-5" src="./assets/img/user/female-avatar-profile-icon-round-woman-face-vector-18307274.jpg"
+                                            alt="user saba picture ">
+                                        <h4 class="py-5 fw-bold">ميرا</h4>
+                                    </div>
+                                    <div class="card " style="width: 18rem;">
+                                        <img src="./assets/img/mug/WhatsApp Image 2023-04-18 at 01.37.37.jpg"
+                                            class="card-img-top" alt="feedback">
+                                        <div class="card-body">
+                                            <p class="card-text">الرسمة كما أريد بالضبط و ألوانها رائعة <i
+                                                    class="fa-solid fa-quote-left"></i></p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    
+                </div>
+                </div>
+        </section>
+        <section class="insta">
+            <div class="layer">
+                <div class="Txt">
+                    <h3>تابعوني على انستغرام </h3>
+                    <a href="https://www.instagram.com/saba.mugs/"><i
+                            class="inst fa-brands fa-instagram"></i>saba.mugs</a>
+                </div>
+            </div>
+        </section>
+        <section class="links mb-2">
+            <h2 class="mb-5 mt-3">اضغط لمشاهدة كامل الفيديو</h2>
+            <div class="row">
+                <div class="li col-md-2">
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/p/CpnoVo3Iftd/"><i
+                                class="fa-brands instagram fa-instagram"></i></a>
+                    </div>
+                    <a href="https://www.instagram.com/p/CpnoVo3Iftd/"><img
+                            src="./assets/img/links/Screenshot 2023-04-17 153034.png" alt="mug photo"></a>
+                </div>
+                <div class="li col-md-2">
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/p/ClZakAGovBp/"><i
+                                class="fa-brands instagram fa-instagram"></i></a>
+                    </div>
+                    <a href="https://www.instagram.com/p/ClZakAGovBp/"><img
+                            src="./assets/img/links/Screenshot 2023-04-17 153200.png" alt="mug photo"></a>
+                </div>
+                <div class="li col-md-2">
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/p/CkgmDGfICbf/"><i
+                                class="fa-brands instagram fa-instagram"></i></a>
+                    </div>
+                    <a href="https://www.instagram.com/p/CkgmDGfICbf/"><img
+                            src="./assets/img/links/Screenshot 2023-04-17 153503.png" alt="mug photo"></a>
+                </div>
+                <div class="li col-md-2">
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/p/CqbRtvJo-1C/"><i
+                                class="fa-brands instagram fa-instagram"></i></a>
+                    </div>
+                    <a href="https://www.instagram.com/p/CqbRtvJo-1C/"><img
+                            src="./assets/img/links/Screenshot 2023-04-17 153112.png" alt="mug photo"></a>
+                </div>
+                <div class="li col-md-2">
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/p/Ch2jF0dodgh/"><i
+                                class="fa-brands instagram fa-instagram"></i></a>
+                    </div>
+                    <a href="https://www.instagram.com/p/Ch2jF0dodgh/"><img
+                            src="./assets/img/links/Screenshot 2023-04-17 153550.png" alt="mug photo"></a>
+                </div>
+                <div class="li col-md-2">
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/p/Cey3dvQInu2/"><i
+                                class="fa-brands instagram fa-instagram"></i></a>
+                    </div>
+                    <a href="https://www.instagram.com/p/Cey3dvQInu2/"><img
+                            src="./assets/img/links/Screenshot 2023-04-17 153616.png" alt="mug photo"></a>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2 class="mb-5 mt-3">للتواصل</h2>
+            <ul>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <li><i class="fa-brands fa-whatsapp"></i>+972592840685</li>
+                    </div>
+                    <div class="col-lg-4">
+                        <li><i class="fa-brands fa-instagram"></i> <a
+                                href="https://www.instagram.com/saba.mugs/">saba.mugs</a></li>
+                    </div>
+                    <div class="col-lg-4">
+                        <li><i class="fa-brands fa-facebook"></i> <a href="#">saba.mugs</a></li>
+                    </div>
+                </div>
+            </ul>
+        </section>
+        <footer class="footer mt-5">
+            <div class="container text-center text-items-center">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-md-4 mt-3">
+                        &copy; جميع الحقوق محفوظة
+                    </div>
+                    <div class="col-md-4 img">
+                        <img src="./assets/img/logo.jpg" class="w-100" alt="saba mug logo">
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <p>Made by <br><span>Razan Alhasan | رَزان الحسن</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- bootstrab js -->
+    <script src="./vendor/js/bootstrap.bundle.min.js"></script>
+    <!-- my local js -->
+    <script src="./assets/js/api.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
